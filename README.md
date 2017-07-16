@@ -40,4 +40,4 @@ The first thing is a `json` returns instead of `XML`.
 I don't know if we can consider `Xamarin` a feature, but I love it!
 
 ### Describe yourself in JSON.
-I have created Enrico.manifest :)
+I have created [Enrico.manifest](https://github.com/erossini/CatAPIExample/blob/master/Enrico.manifest) :)

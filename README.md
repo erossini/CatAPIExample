@@ -1,3 +1,4 @@
+
 # CatAPIExample
 The task is to create an application that accepts a category and shows results based on that category.
 Here are the two API endpoints that can be used.
@@ -14,4 +15,5 @@ Here are the two API endpoints that can be used.
 
 **Then** I see images related to that category
 
+## Screenshot
 ![CatAPI Screenshot](https://github.com/erossini/CatAPIExample/blob/master/Screenshot/CatAPIScreenshot.PNG)

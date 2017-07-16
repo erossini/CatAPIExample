@@ -1,0 +1,24 @@
+{
+  "name": "Enrico",
+  "lastname": "Rossini",
+  "age": 42,
+  "nationality": "Italian",
+  "livesin": "London",
+  "passions": [
+    "Programming",
+    "Learn languages",
+    "Travels"
+  ],
+  "interests": [
+    "Historical places",
+    "Meeting new people"
+  ],
+  
+  "dreams": [
+    "To make this world a better place!"
+  ],
+  
+  "believes": [
+    "That we should all have a chance in life, we should not be judged because of our color, ethnicity and educational background!"
+  ]
+}

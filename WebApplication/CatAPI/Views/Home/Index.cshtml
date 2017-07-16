@@ -1,0 +1,70 @@
+﻿@model CatAPI.Models.Search
+@using CatAPI.Models
+@using CatAPI.Helpers
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@section head {
+    <link href="~/Content/cats.css" rel="stylesheet" />
+}
+
+<div class="search">
+    <div class="styled-select">
+        @Html.DropDownListFor(m => m.CategoryName, new SelectList(Model.Categories, "Name", "Name"), "Select your category")
+    </div>
+</div>
+
+<div id="Search">
+    @if (Model.Images != null)
+    {
+        <hgroup class="mb20">
+            <h1>Search Results</h1>
+            <h2 class="lead"><strong class="text-danger">12</strong> cats were found for the search for <strong class="text-danger">@ViewBag.Category</strong></h2>
+        </hgroup>
+
+        foreach (Image img in Model.Images)
+        {
+            <div class="card hovercard">
+                <img src="@img.ImageUrl" alt="" />
+                <div class="avatar">
+                    <img src="@img.ImageUrl" style="width: 80px;" alt="" />
+                </div>
+                <div class="info">
+                    <div class="title">
+                        @img.Id
+                    </div>
+                    <div class="desc">Lorem ipsum</div>
+                    <div class="desc">Lorem ipsum</div>
+                    <div class="desc">Lorem ipsum</div>
+                </div>
+                <div class="bottom">
+                    <a href="@img.Link" target="_blank">
+                        <span class="label label-danger">View this</span>
+                    </a>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <hgroup class="mb20">
+            <h1>No cats for you</h1>
+        </hgroup>
+
+        <p>
+            Select another category to see new cats.
+        </p>
+    }
+</div>
+
+<div class="clearfix"></div>
+
+@section scripts {
+    <script>
+        $('select').change(function () {
+            document.location.href = '@UIHelpers.GetCurrentUrl()/Home/Index?category=' + $(this).find('option:selected').val();
+        });
+    </script>
+}

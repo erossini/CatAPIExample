@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatAPI", "CatAPI\CatAPI.csproj", "{87DB94F7-9732-4475-9D01-18C9125015BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatAPI.Tests", "CatAPI.Tests\CatAPI.Tests.csproj", "{3D332FB6-479B-49BC-AA36-86BC833FB743}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87DB94F7-9732-4475-9D01-18C9125015BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DB94F7-9732-4475-9D01-18C9125015BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DB94F7-9732-4475-9D01-18C9125015BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DB94F7-9732-4475-9D01-18C9125015BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D332FB6-479B-49BC-AA36-86BC833FB743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D332FB6-479B-49BC-AA36-86BC833FB743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D332FB6-479B-49BC-AA36-86BC833FB743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D332FB6-479B-49BC-AA36-86BC833FB743}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

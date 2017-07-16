@@ -1,4 +1,4 @@
-# CatAPIExample
+ # CatAPIExample
 The task is to create an application that accepts a category and shows results based on that category.
 Here are the two API endpoints that can be used.
 
@@ -19,7 +19,7 @@ Here are the two API endpoints that can be used.
 
 ## Some questions
 ### How long did you spend on the coding CatAPI?
-I spent about 2 hours.
+I spent about 2 hours. Mostly, I spent time to read the `XML` and convert it in a useful `Model` and design a cool page to show the results.
 
 ### What would you change / implement in your application given more time?
 At the moment when you select a category from the dropdownlist, javascript recalls the page with a `category` parameter that it reads from the `select`. I would change this part with a `WebAPI`. This WebAPI returns a `json` with the list of cats. `jQuery` with `post` reads this WebAPI and shows dinamically the cats.

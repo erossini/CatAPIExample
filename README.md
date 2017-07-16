@@ -28,7 +28,7 @@ At the moment when you select a category from the dropdown list, `javascript` re
 I didn't use `IOC` (Inversion of Control) in this project. An interesting thing is `WebClient`: I created a generic wbeclient with `T` to call and read the `WebAPI`. For each `WebAPI` result, I created a representation of the `XML` and a function responsible for receiving from the generic `WebClient` the XML representation and it converts this in a more easy-to-use `model`.
 
 ### How would you debug an issue in production code?
-If you can connect your machine to the IIS in the production, you can debug the application directly from there. If you can't do that, there are some logs in the code in particular when it calls the API. The generate logs I'm using `Log4Net`: the problem with this library is that isn't `async`. For this reason, I have created a library to use `Log4Net` in async cases like this. You can find more detail about it on http://puresourcecode.com/page/psc-log4net-async (![PureSourceCode](http://puresourcecode.com) is my blog).
+If you can connect your machine to the IIS in the production, you can debug the application directly from there. If you can't do that, there are some logs in the code in particular when it calls the API. The generate logs I'm using `Log4Net`: the problem with this library is that isn't `async`. For this reason, I have created a library to use `Log4Net` in async cases like this. You can find more detail about it on http://puresourcecode.com/page/psc-log4net-async ([PureSourceCode](http://puresourcecode.com) is my blog).
 
 ### What improvements would you make to the cat API?
 The first thing is a `json` returns instead of `XML`.
